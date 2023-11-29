@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_yellow">#FFF4CC</color>
+    <color name="text_yellow_color">#FFA800</color>
+    <color name="color_black">#000000</color>
+    <color name="color_black_alpha_22">#00000038</color>
+    <color name="color_blue">#0D72FF</color>
+    <color name="color_grey">#828796</color>
+    <color name="bg_color">#F6F6F9</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="bg_peculiarity">#FBFBFC</color>
+    <color name="color_blue_alpha_10">#1A0D72FF</color>
+    <color name="color_text_standard">#14142B</color>
+    <color name="color_transparent">#00828796</color>
+</resources>

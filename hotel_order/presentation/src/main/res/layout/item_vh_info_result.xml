@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_info_part"
+    android:paddingHorizontal="@dimen/padding_horizontal_large"
+    android:layout_marginVertical="@dimen/margin_small"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/margin_standard">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_tour" />
+
+        <TextView
+            android:id="@+id/tvValueTour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_fuel_surcharge" />
+
+        <TextView
+            android:id="@+id/tvValueFuelSurcharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_service_fee" />
+
+        <TextView
+            android:id="@+id/tvValueServiceFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3"
+        android:layout_marginBottom="@dimen/margin_standard"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_to_pay" />
+
+        <TextView
+            android:id="@+id/tvCountToPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="3"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/text_size_standard"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

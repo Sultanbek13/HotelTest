@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextInputLayoutStyle">
+        <item name="boxStrokeColor">@color/color_transparent</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxBackgroundColor">@color/bg_color</item>
+        <item name="android:textColorHint">@color/color_grey</item>
+        <item name="hintTextColor">@color/color_grey</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_btn</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_btn</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_btn</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_btn</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+
+    <style name="TextInputLayoutHintStyle">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+</resources>

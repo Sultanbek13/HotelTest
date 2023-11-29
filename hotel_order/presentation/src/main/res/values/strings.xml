@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_hotel">Отель</string>
+    <string name="tv_about_hotel">Об отеле</string>
+    <string name="tv_facilities">Удобства</string>
+    <string name="tv_must_have">Самое необходимое</string>
+    <string name="tv_included">Что включено</string>
+    <string name="tv_not_included">Что не включено</string>
+    <string name="select_hotel_number">К выбору номера</string>
+    <string name="select_number">Выбрать номер</string>
+    <string name="tv_more_about_room">Подробнее о номере</string>
+    <string name="tv_reservation">Бронирование</string>
+    <string name="tv_departure">Вылет из</string>
+    <string name="tv_country_or_city">Страна, город</string>
+    <string name="tv_date">Дата</string>
+    <string name="tv_count_night">Кол-во ночей</string>
+    <string name="tv_hotel">Отель</string>
+    <string name="tv_room_number">Номер</string>
+    <string name="tv_nutrition">Питание</string>
+    <string name="tv_information_about_customer">Информация о покупателе</string>
+    <string name="tv_phone_number">Номер телефона</string>
+    <string name="tv_email">Почта</string>
+    <string name="tv_mention_not_share_data_others">Эти данные никому не передаются. После оплаты мы вышли чек на указанный вами номер и почту</string>
+    <string name="tv_tourist">Турист</string>
+    <string name="tv_name">Имя</string>
+    <string name="tv_surname">Фамилия</string>
+    <string name="tv_date_of_birthday">Дата рождения</string>
+    <string name="tv_ctizenship">Гражданство</string>
+    <string name="tv_number_passport">Номер загранпаспорта</string>
+    <string name="tv_deadline_passport">Срок действия загранпаспорта</string>
+    <string name="tv_add_tourist">Добавить Туриста</string>
+    <string name="tv_tour">Тур</string>
+    <string name="tv_fuel_surcharge">Топливый сбор</string>
+    <string name="tv_service_fee">Сервисный сбор</string>
+    <string name="tv_to_pay">К оплате</string>
+    <string name="tv_pay">Оплатить</string>
+    <string name="tv_from">от</string>
+    <string name="tv_order_paid">Заказ оплачен</string>
+    <string name="tv_your_order_ready">Ваш заказ принят в работу</string>
+    <string name="tv_notifcation_for_user">Подтверждение заказа №104893 может занять некоторое время (от 1 часа до суток). Как только мы получим ответ от туроператора, вам на почту придет уведомление.</string>
+    <string name="tv_good">Супер!</string>
+    <string name="tv_days">дней</string>
+    <string name="tv_start_mask_phone_number">+7</string>
+    <string name="tv_error_wrong_email">Неверный логин</string>
+</resources>

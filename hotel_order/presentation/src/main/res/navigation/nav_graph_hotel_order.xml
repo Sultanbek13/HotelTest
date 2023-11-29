@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_hotel_order"
+    app:startDestination="@id/hotelFragment">
+
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.sultandev.presentation.ui.hotel.HotelFragment"
+        android:label="HotelFragment"
+        tools:layout="@layout/fragment_hotel"
+        >
+
+        <action
+            android:id="@+id/action_hotelFragment_to_numberFragment"
+            app:destination="@id/numberFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/numberFragment"
+        android:name="com.sultandev.presentation.ui.room.RoomFragment"
+        android:label="NumberFragment"
+        tools:layout="@layout/fragment_room"
+        >
+
+        <argument
+            android:name="hotel_name"
+            app:argType="string"
+            android:defaultValue="Room" />
+        <action
+            android:id="@+id/action_numberFragment_to_reservationFragment"
+            app:destination="@id/reservationFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/reservationFragment"
+        android:name="com.sultandev.presentation.ui.reservation.ReservationFragment"
+        android:label="ReservationFragment"
+        tools:layout="@layout/fragment_reservation"
+        >
+        <action
+            android:id="@+id/action_reservationFragment_to_paidFragment"
+            app:destination="@id/paidFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paidFragment"
+        android:name="com.sultandev.presentation.ui.paid.PaidFragment"
+        android:label="PaidFragment"
+        tools:layout="@layout/fragment_paid"
+        >
+        <action
+            android:id="@+id/action_paidFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+    </fragment>
+
+</navigation>

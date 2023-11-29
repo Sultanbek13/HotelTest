@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/padding_horizontal_large"
+    android:background="@drawable/bg_info_part"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_add_tourist"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_size_middle"
+        android:fontFamily="@font/font_text_style"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/margin_standard"
+        />
+
+</RelativeLayout>

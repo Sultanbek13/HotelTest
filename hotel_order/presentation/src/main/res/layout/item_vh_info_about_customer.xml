@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/margin_small"
+    android:background="@drawable/bg_info_part"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/padding_horizontal_large">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_standard"
+        android:fontFamily="@font/font_text_style"
+        android:text="@string/tv_information_about_customer"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_size_middle"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/customerPhoneNumberEditTextLayout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv_phone_number"
+        android:layout_marginBottom="@dimen/margin_small"
+        app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/customerPhoneNumberEditTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_text_style"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/padding_horizontal_large"
+            android:textColor="@color/color_text_standard"
+            android:textSize="@dimen/text_size_standard"
+            android:paddingBottom="@dimen/padding_small"
+            tools:text="+998 99 223-45-56" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/customerEmailEditTextLayout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv_email"
+        android:layout_marginTop="@dimen/margin_small"
+        app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/customerEmailEditTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_text_style"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/padding_horizontal_large"
+            android:textColor="@color/color_text_standard"
+            android:textSize="@dimen/text_size_standard"
+            android:paddingBottom="@dimen/padding_small"
+            tools:text="email.com" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_standard"
+        android:fontFamily="@font/font_text_style"
+        android:text="@string/tv_mention_not_share_data_others"
+        android:textColor="@color/color_grey"
+        android:textSize="@dimen/text_size_middle_small" />
+
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_info_part"
+    android:paddingHorizontal="@dimen/padding_horizontal_large"
+    android:layout_marginVertical="@dimen/margin_small"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/margin_standard">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_departure" />
+
+        <TextView
+            android:id="@+id/tvValueDeparture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_country_or_city" />
+
+        <TextView
+            android:id="@+id/tvValueCountryOrCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_date" />
+
+        <TextView
+            android:id="@+id/tvValueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_count_night" />
+
+        <TextView
+            android:id="@+id/tvCountNight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_hotel" />
+
+        <TextView
+            android:id="@+id/tvValueHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_room_number" />
+
+        <TextView
+            android:id="@+id/tvValueRoomNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:weightSum="3"
+        android:layout_marginBottom="@dimen/margin_standard"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:maxLines="2"
+            android:textColor="@color/color_grey"
+            android:textSize="@dimen/text_size_standard"
+            android:text="@string/tv_nutrition" />
+
+        <TextView
+            android:id="@+id/tvValueNutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard" />
+
+    </LinearLayout>
+
+</LinearLayout>

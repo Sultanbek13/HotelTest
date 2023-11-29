@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/toolBarPaid"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_order_paid"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_standard_middle"
+            android:fontFamily="@font/font_text_style"
+            android:layout_margin="@dimen/margin_standard"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/iconToBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="@dimen/margin_middle"
+            android:paddingVertical="@dimen/padding_horizontal_standard"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:src="@drawable/party_popper"
+            android:layout_margin="@dimen/margin_large"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_your_order_ready"
+            android:textSize="@dimen/text_size_middle"
+            android:fontFamily="@font/font_text_style"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/margin_middle_standard"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_notifcation_for_user"
+            android:textSize="@dimen/text_size_standard"
+            android:fontFamily="@font/font_text_style"
+            android:textColor="@color/color_grey"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_standard"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGood"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="@dimen/margin_standard"
+        android:layout_marginHorizontal="@dimen/margin_standard"
+        android:backgroundTint="@color/color_blue"
+        android:text="@string/tv_good"
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/font_text_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="@dimen/radius_btn"
+        android:textAllCaps="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

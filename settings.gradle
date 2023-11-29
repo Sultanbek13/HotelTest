@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Hotel Service Test"
+include ':app'
+include ':core'
+include ':core:util'
+include ':hotel_order'
+include ':hotel_order:data'
+include ':hotel_order:di'
+include ':hotel_order:domain'
+include ':hotel_order:presentation'
+include ':core:base'
+include ':core:di'

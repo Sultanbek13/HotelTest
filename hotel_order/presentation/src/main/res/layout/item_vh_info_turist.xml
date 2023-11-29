@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/margin_small"
+    android:background="@drawable/bg_info_part"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/padding_horizontal_large">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/font_text_style"
+            android:text="@string/tv_tourist"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_middle"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_standard"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/stateHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_navigate_to_top"
+            android:layout_marginBottom="@dimen/margin_standard"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/moreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/customerNameEditTextLayout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:hint="@string/tv_name"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customerNameEditTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font_text_style"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/padding_horizontal_large"
+                android:paddingBottom="@dimen/padding_small"
+                android:textColor="@color/color_text_standard"
+                android:textSize="@dimen/text_size_standard"
+                tools:text="Иван" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/customerSurnameEditTextLayout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:hint="@string/tv_surname"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customerSurnameEditTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font_text_style"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/padding_horizontal_large"
+                android:paddingBottom="@dimen/padding_small"
+                android:textColor="@color/color_text_standard"
+                android:textSize="@dimen/text_size_standard"
+                tools:text="Иванов" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/customerBirthdayEditTextLayout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:hint="@string/tv_date_of_birthday"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customerBirthdayEditTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font_text_style"
+                android:inputType="date"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/padding_horizontal_large"
+                android:paddingBottom="@dimen/padding_small"
+                android:textColor="@color/color_text_standard"
+                android:textSize="@dimen/text_size_standard" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/customerCitizenshipEditTextLayout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:hint="@string/tv_ctizenship"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customerCitizenshipEditTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font_text_style"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/padding_horizontal_large"
+                android:paddingBottom="@dimen/padding_small"
+                android:textColor="@color/color_text_standard"
+                android:textSize="@dimen/text_size_standard" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/customerPassportNumberEditTextLayout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:hint="@string/tv_number_passport"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customerPassportNumberEditTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font_text_style"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/padding_horizontal_large"
+                android:paddingBottom="@dimen/padding_small"
+                android:textColor="@color/color_text_standard"
+                android:textSize="@dimen/text_size_standard" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/customerDeadlinePassportEditTextLayout"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_standard"
+            android:hint="@string/tv_deadline_passport"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customerDeadlinePassportEditTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/font_text_style"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/padding_horizontal_large"
+                android:paddingBottom="@dimen/padding_small"
+                android:textColor="@color/color_text_standard"
+                android:textSize="@dimen/text_size_standard" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

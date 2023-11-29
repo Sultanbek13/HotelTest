@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="Hotel_Service_Test.HotelService.data" target="17" />
+      <module name="Hotel_Service_Test.HotelService.di" target="17" />
+      <module name="Hotel_Service_Test.HotelService.domain" target="17" />
+      <module name="Hotel_Service_Test.HotelService.presentation" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

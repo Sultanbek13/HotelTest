@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_peculiatiry"
+    android:layout_marginHorizontal="@dimen/margin_small"
+    android:layout_marginVertical="@dimen/margin_small"
+    >
+
+    <TextView
+        android:id="@+id/tvPeculiarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Все включено"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:paddingVertical="@dimen/padding_vertical_standard"
+        android:textSize="@dimen/text_size_standard"
+        android:textColor="@color/color_grey"
+        android:fontFamily="@font/font_text_style"
+        />
+
+</LinearLayout>

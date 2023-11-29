@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/padding_vertical_standard"
+    android:background="@drawable/bg_info_part"
+    android:paddingHorizontal="@dimen/padding_horizontal_large"
+    android:layout_marginVertical="@dimen/margin_small"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_standard"
+        android:paddingHorizontal="@dimen/padding_horizontal_standard"
+        android:background="@color/bg_yellow"
+        >
+
+        <TextView
+            android:id="@+id/ratingHotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="5 Превосходно"
+            android:textSize="@dimen/text_size_standard"
+            android:textColor="@color/text_yellow_color"
+            android:fontFamily="@font/font_text_style"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Steigenberger Makadi"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/text_size_middle"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:fontFamily="@font/font_text_style"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/locationHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Madinat Makadi, Safaga Road, Makadi Bay, Египет"
+        android:textColor="@color/color_blue"
+        android:textSize="@dimen/text_size_middle_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/font_text_style"
+        android:layout_marginBottom="@dimen/margin_standard"
+        />
+
+</LinearLayout>

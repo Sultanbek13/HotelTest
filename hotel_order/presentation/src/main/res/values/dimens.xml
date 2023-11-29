@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_middle_small">14sp</dimen>
+    <dimen name="text_size_standard">16sp</dimen>
+    <dimen name="text_size_standard_middle">18sp</dimen>
+    <dimen name="text_size_middle">22sp</dimen>
+    <dimen name="text_size_large">30sp</dimen>
+    <dimen name="padding_small">2dp</dimen>
+    <dimen name="padding_horizontal_large">16dp</dimen>
+    <dimen name="padding_horizontal_standard">10dp</dimen>
+    <dimen name="padding_vertical_standard">5dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_standard_middle">12dp</dimen>
+    <dimen name="margin_middle_standard">10dp</dimen>
+    <dimen name="margin_middle">8dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_snip">2dp</dimen>
+    <dimen name="def_height_carousel">260dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="radius_btn">15dp</dimen>
+    <dimen name="radius_bg_small_btn">5dp</dimen>
+    <dimen name="radius_edit_text">10dp</dimen>
+</resources>

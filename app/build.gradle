@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    namespace 'com.sultandev.hotelservicetest'
+    compileSdk libs.versions.compileSdk.get().toInteger()
+
+    defaultConfig {
+        applicationId "com.sultandev.hotelservicetest"
+        minSdk libs.versions.minSdk.get().toInteger()
+        targetSdk libs.versions.targetSdk.get().toInteger()
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        debug {
+            buildConfigField "String", "BASE_URL_HOTEL_ORDER", "\"https://run.mocky.io/v3/\""
+        }
+
+        release {
+
+            buildConfigField "String", "BASE_URL_HOTEL_ORDER", "\"https://run.mocky.io/v3/\""
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android {
+        buildFeatures {
+            buildConfig = true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Core
+    implementation project(path: ':core:util')
+    implementation project(path: ':core:base')
+    implementation project(path: ':core:di')
+
+    // Hotel Order
+    implementation project(path: ':hotel_order:di')
+    implementation project(path: ':hotel_order:data')
+    implementation project(path: ':hotel_order:domain')
+    implementation project(path: ':hotel_order:presentation')
+
+    // Base
+    implementation libs.androidx.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraint
+
+    // Dagger
+    implementation libs.dagger
+    annotationProcessor libs.dagger.compiler
+    kapt libs.dagger.compiler
+
+    // Navigation
+    implementation libs.bundles.navigation
+
+}
